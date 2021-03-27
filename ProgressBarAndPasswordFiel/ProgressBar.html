@@ -1,1 +1,42 @@
-fdsafdsf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <!-- <script src="../jquery/dist/jquery.min.js"></script> -->
+    <script src="../JavaScriptFiles/ProgressBar.js"></script>
+    <link rel="stylesheet" href="../CSSFiles/ProgressBar.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+   Percentage:
+   <select name="percent" id="percent">
+       <option value="5">5%</option>
+       <option value="10">10%</option>
+       <option value="20">20%</option>
+       <option value="40">40%</option>
+       <option value="60">60%</option>
+       <option value="80">80%</option>
+       <option value="100">100%</option>
+   </select>
+   <input type="button" value="Start Animation" id="btnStartAnimation"><br><br>
+   <div id="outerDiv" style="background-color:rgb(68, 68, 68);height: 40px;width: 500px;padding:5px;border-radius: 4px;">
+        <div id="innerDiv" style="width: 0px ;height: 40px;background-color: rgb(255, 72, 0);border-radius: 4px;color: white;text-align:center;font-size: 1.1em;"></div>
+    </div>
+
+    <div class="password-field">
+        <div class="password-labels">
+            <label class="pass-label noselect" >Password: <input type="password" id="password-text"></label>
+            <label class="pass-label noselect" style="cursor: pointer;"><i class="far fa-eye"></i> <input type="checkbox" name="chckbox" id="showPassword" hidden></label>
+        </div>
+      
+    </div>
+   
+</body>
+</html>
