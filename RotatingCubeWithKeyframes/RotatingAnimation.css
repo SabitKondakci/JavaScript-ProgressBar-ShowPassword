@@ -1,0 +1,47 @@
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+
+#div-test{
+    display: flex;
+    text-align:center;
+    padding: 5px;
+    word-spacing: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition: background-color 0.5s;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    margin: 100px auto;
+    z-index: 0;
+}
+
+#btn-test{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-attachment:local;
+    background-color:rgb(243, 236, 140);
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+}
+
+div h3{
+    margin:auto auto;
+    color:rgb(0, 0, 0)
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
