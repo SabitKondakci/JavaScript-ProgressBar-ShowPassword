@@ -5,21 +5,26 @@ window.onload = function(){
 jQuery(function(){
 
     var menuBar = $("td#menu-data");
+    var menuDiv = $("td #menu-div");
     var icon =$("i#left-right-arrow");
 
     icon.on("click",function(){
+
+        
+        menuBar.toggle(300,"swing");
         
         if($(this).attr("class") == "fas fa-angle-double-right")
         {        
-            menuBar.hide("fast","linear");
+            menuDiv.fadeOut(100);
             $(this).attr("class","fas fa-angle-double-left");
         }
         else
         {
-            menuBar.show("fast","linear");
+            menuDiv.fadeIn(600);
             $(this).attr("class","fas fa-angle-double-right");
         }
-             
+
+       
     })
 
     icon.on({
