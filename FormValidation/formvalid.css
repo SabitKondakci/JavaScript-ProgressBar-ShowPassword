@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to bottom, rgb(149, 149, 255), rgb(0, 17, 255));
+    background: -moz-linear-gradient( to bottom, rgb(149, 149, 255), rgb(0, 17, 255));
+    background: -ms-linear-gradient( to bottom, rgb(149, 149, 255), rgb(0, 17, 255));
+    background: -o-linear-gradient( to bottom, rgb(149, 149, 255), rgb(0, 17, 255));
+    background: linear-gradient(to bottom, rgb(149, 149, 255), rgb(0, 17, 255));
+}
+
+.form{
+    width: 300px;
+    height:fit-content;
+    background-color: rgb(113, 180, 255);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30vh auto;
+    transition: background-color 1s;
+}
+.form:hover{
+    background-color: rgb(83, 163, 255);
+    transition: box-shadow 1s;
+}
