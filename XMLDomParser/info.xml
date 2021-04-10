@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/info.css"?>
+
+<bookstore>
+    <!-- Thanks for everything    -->
+    <book>
+        <title category="science-fiction">No One Likes Robots</title>
+        <author lang="tr">Jammy M. Solaris</author>
+        <date>
+            <year>2011</year>
+            <month>04</month>
+            <day>12</day>
+        </date>
+        <price>21TL &lt; or &gt; &amp; &quot; &apos;</price>
+    </book> 
+
+    <book>
+         <title category="romantic">Desert</title>
+        <author lang="tr">Naim Karabasan</author>
+        <date>
+            <year>2001</year>
+            <month>05</month>
+            <day>2</day>
+        </date>
+        <price>50TL</price>
+    </book>
+
+    <book>
+         <title category="romantic">Ontario</title>
+        <author lang="tr">Torka Amarak</author>
+        <date>
+            <year>2002</year>
+            <month>03</month>
+            <day>1</day>
+        </date>
+        <price>60TL</price>
+    </book>
+</bookstore>
