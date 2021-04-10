@@ -21,6 +21,7 @@
              if (this.readyState == 4 && this.status == 200) {
 
                   xmlDoc = xmlParser.parseFromString(this.responseText,"text/xml");
+                  // or xmlDoc = this.responseXML;
                   var tags = xmlDoc.getElementsByTagName("author");
                   var authors = "";
 
