@@ -28,7 +28,7 @@
                 <tbody>
                     <xsl:for-each select="descendant::bookstore/book
                      | descendant::bookstore/book">
-                         <xsl:sort select="date/year" order="descending" data-type="number"></xsl:sort>
+                         <xsl:sort select="date/year" order="descending" data-type="number"/>
                         <tr> 
                             <td><xsl:value-of select="author"/></td> 
                             <td><xsl:value-of select="title"/></td>
