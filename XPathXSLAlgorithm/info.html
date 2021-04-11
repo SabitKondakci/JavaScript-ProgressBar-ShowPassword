@@ -15,9 +15,6 @@
         window.onload = function(){
 
             var request = new XMLHttpRequest();
-            var xmlParser = new DOMParser();
-            var xmlDoc;
-
             request.onreadystatechange = function() {
 
              if (this.readyState == 4 && this.status == 200) {
