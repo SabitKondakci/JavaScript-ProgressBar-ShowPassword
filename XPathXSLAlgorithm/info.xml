@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="info.xsl"?>
+
+<library>
+<bookstore>
+    <!-- Thanks for everything    -->
+    <book  category="science-fiction">
+        <title>No One Likes Robots</title>
+        <author lang="tr">Jammy M. Solaris</author>
+        <date>
+            <year>2011</year>
+            <month>04</month>
+            <day>12</day>
+        </date>
+        <price>21</price>
+    </book> 
+
+    <book category="romantic">
+         <title >Desert</title>
+        <author lang="tr">Naim Karabasan</author>
+        <date>
+            <year>2001</year>
+            <month>05</month>
+            <day>2</day>
+        </date>
+        <price>50</price>
+    </book>
+
+    <book category="drama">
+         <title >Ontario</title>
+        <author lang="fr">Torka Amarak</author>
+        <date>
+            <year>2002</year>
+            <month>03</month>
+            <day>1</day>
+        </date>
+        <price>60</price>
+    </book>
+
+    <book  category="pulp-fiction">
+         <title>Ferrori</title>
+        <author lang="tr">Haber Alma Ozgurlugu</author>
+        <date>
+            <year>2000</year>
+            <month>01</month>
+            <day>7</day>
+        </date>
+        <price>70</price>
+    </book>
+</bookstore>
+</library>
