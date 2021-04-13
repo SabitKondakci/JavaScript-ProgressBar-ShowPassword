@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="./btstrap.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./btstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!-- <div class="container-md" style="background-color: wheat(255, 255, 255); margin-top: 25vh;">
+        <div class="row" style="background-color:wheat;border-radius: 5px;">
+
+            <div class="col-sm m-sm-1 p-3" style="background-color: coral;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ullam id nisi officia eaque nihil ad aliquid laboriosam nulla voluptas?
+            </div>
+
+            <div class="col-sm  my-1 p-3" style="background-color: coral;">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ullam id nisi officia eaque nihil ad aliquid laboriosam nulla voluptas?
+            </div>
+
+            <div class="col-sm m-sm-1 p-3" style="background-color: coral;">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ullam id nisi officia eaque nihil ad aliquid laboriosam nulla voluptas?
+            </div>
+        </div> 
+    </div> -->
+    
+    <nav id="header" class="navbar navbar-nav navbar-dark bg-primary mb-sm-1">
+        <div class="container-md">
+            <a href="file:///C:/Users/fenko/Desktop/Bootstrap/btstrap.html"><i id="home" class="fas fa-home fa-2x float-start d-none d-sm-block"></i></a>
+            <i id="vertical-lines" class="fas fa-grip-lines-vertical fa-2x d-block d-sm-none " style="visibility: hidden;"></i>
+            <div id="bars" class="nav-item fas fa-bars fa-2x"></div>
+        </div>
+    </nav>
+
+    <div id="menu-bar" class="container-md noselect" style="display: none;">
+      <ul class="nav nav-tabs flex-row-reverse ">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fas fa-cog"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#login">Log In</a></li>
+            <li><a class="dropdown-item" href="#logout">Log Out</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#options">Options</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="file:///C:/Users/fenko/Desktop/Bootstrap/article.html">Articles</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notes</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+    </div>
+    
+
+    <div class="container-md noselect">
+        <div id="item-container" class="row row-cols-1 row-cols-sm-3 row-cols-md-6 p-sm-2">
+            <div class="col-sm">
+            Code challenge for good : <code>span</code>,<code>p</code>,<code>&lt;div&gt;</code> <abbr title="World Health Organization" class="initialism">WHO</abbr>
+            click <kbd>Ctrl+P</kbd>
+            <pre>
+              <code>
+                for(let i = 0; i&lt;100;i++)
+                {
+                  console.log(i);
+                }
+              </code>
+            </pre>
+            </div> 
+            <div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci, doloremque earum assumenda reiciendis dolore officiis tenetur amet animi sed vitae ut quos asperiores architecto rem a eaque, aliquid pariatur iusto non ab voluptates? Dolore nam neque, assumenda quidem fugiat molestias ipsam deleniti veritatis iste earum rerum exercitationem dolorem itaque?</div>
+            <div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit cum quibusdam beatae iusto tenetur sequi autem, laudantium quidem sunt consequatur facilis doloribus provident dignissimos quos error, rem repellendus mollitia. A blanditiis perferendis quos perspiciatis placeat esse quisquam, quibusdam ullam at nemo minus </div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit cum quibusdam beatae iusto tenetur sequi autem, laudantium quidem sunt consequatur facilis doloribus provident dignissimos quos error, rem repellendus mollitia. A blanditiis perferendis quos perspiciatis placeat esse quisquam, quibusdam ullam at nemo minus </div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit cum quibusdam beatae iusto tenetur sequi autem, laudantium quidem sunt consequatur facilis doloribus provident dignissimos quos error, rem repellendus mollitia. A blanditiis perferendis quos perspiciatis placeat esse quisquam, quibusdam ullam at nemo minus </div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit cum quibusdam beatae iusto tenetur sequi autem, laudantium quidem sunt consequatur facilis doloribus provident dignissimos quos error, rem repellendus mollitia. A blanditiis perferendis quos perspiciatis placeat esse quisquam, quibusdam ullam at nemo minus </div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+            <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit cum quibusdam beatae iusto tenetur sequi autem, laudantium quidem sunt consequatur facilis doloribus provident dignissimos quos error, rem repellendus mollitia. A blanditiis perferendis quos perspiciatis placeat esse quisquam, quibusdam ullam at nemo minus </div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div><div class="col-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint.</div>
+
+            <div class="col-sm font-monospace">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tempora soluta provident id quos saepe. Quos modi et provident sapiente. Possimus quis aliquam vero suscipit animi facilis, dolores nobis optio ipsum adipisci ad aliquid. Debitis possimus velit dolores laborum non voluptates, ducimus deleniti magni. Ratione, culpa. Exercitationem suscipit, voluptas ratione illo  reiciendis totam quam doloremque! Repellat minima fuga non similique ducimus. Eveniet aliquam quas dignissimos laudantium.quis explicabo nihil doloremque distinctio autem nam excepturi, saepe rerum esse consequuntur hic. Amet a, deserunt tenetur accusamus sint facilis mollitia saepe dolor eos aliquid, quibusdam pariatur? Alias perspiciatis ut voluptate maxime consequuntur, modi omnis necessitatibus suscipit mollitia nobis aliquid expedita beatae facere quo, quam dolorum molestiae laboriosam qui est voluptas sed? Enim cum eaque quasi assumenda eius minus exercitationem inventore nisi debitis. Omnis totam, molestiae consequatur ab assumenda ipsam! Nulla eos placeat dignissimos tenetur perspiciatis recusandae eveniet? Eius pariatur officia similique autem. Asperiores nam, dolores ut molestias esse iure accusamus eligendi voluptatum animi laborum magni unde, dolorem quis dignissimos pariatur a sed dolor qui officiis tenetur. A sequi dolorem expedita in, itaque ut reiciendis ducimus. Laboriosam dignissimos iusto quibusdam ratione, voluptates maiores hic expedita reiciendis? Obcaecati sed consequuntur veritatis. Nesciunt, corporis blanditiis qui optio voluptas rem in itaque non ipsum quod quaerat delectus dolore dolorum unde perferendis. Autem, quo ab culpa vero sunt nisi deleniti quis alias accusantium. Maiores illum minus recusandae voluptas aspernatur totam excepturi consectetur ullam voluptatum, voluptates esse obcaecati, qui dolores iusto explicabo nisi magni voluptate error quisquam praesentium quibusdam voluptatem. Sapiente quod ullam, excepturi consectetur dolor aspernatur nisi dolores vel enim nam sequi dolorum molestiae unde rem illo nulla maiores. Ratione, repudiandae amet? Quidem iure perferendis nulla numquam commodi, assumenda mollitia officia dolorum cumque. Minus reprehenderit porro modi earum quidem facilis maiores eligendi delectus nam iusto nulla provident aperiam praesentium odio at dignissimos magni ipsa veniam ullam facere, totam deserunt fugiat. Iusto autem quaerat assumenda reiciendis cumque commodi placeat eos nulla ullam laudantium unde corporis eius ratione consequuntur in rerum, praesentium laboriosam reprehenderit ducimus incidunt libero provident. Atque, quidem labore deserunt nihil tempore, perferendis iusto quibusdam ducimus aut eius qui voluptas incidunt modi, adipisci veritatis recusandae corrupti nostrum corporis? Voluptatem, voluptatibus provident repellendus, alias eligendi suscipit nobis voluptas nulla doloremque maiores rerum. Modi libero pariatur ad sequi tempora reprehenderit dignissimos, debitis earum nostrum ut rem, excepturi maxime accusantium quibusdam at veritatis tenetur totam officiis cumque maiores. Voluptatem aspernatur rem, voluptates, facere dolor, laudantium distinctio repellendus molestiae optio unde nostrum. Rem rerum accusantium illo nostrum vitae sequi consequatur aut magni! Quia asperiores sapiente molestiae nesciunt animi minima accusantium, veritatis quas aliquid beatae sunt, suscipit explicabo maiores omnis aliquam nobis doloribus repudiandae, voluptas ab ut voluptatum numquam fugit qui! Optio commodi cum cumque quos adipisci, ab quo, nesciunt voluptatem odio facilis dicta! Perferendis laudantium hic voluptatum dicta, eos totam non recusandae libero culpa corrupti cum, labore, quas rerum fugit. Libero cupiditate, est corporis rem iste veniam hic ad nobis aperiam dolor non blanditiis alias fugit tempore quaerat beatae odio ducimus dicta corrupti eligendi nemo accusantium maxime! Enim atque praesentium in unde sit voluptatum quis laudantium quibusdam quasi odio possimus, accusantium nesciunt ex officiis animi. Sed, recusandae libero odio cumque aperiam earum consectetur beatae quia! Doloribus modi molestiae mollitia quae sed harum laudantium aliquam debitis temporibus eum odit asperiores natus ad accusantium provident, dolores quod aspernatur ipsam omnis molestias doloremque sunt id inventore quis? Sequi voluptatibus ipsum fuga dignissimos? Itaque nam assumenda dicta aliquam mollitia tenetur adipisci placeat impedit, modi veritatis soluta corporis libero consequatur eveniet aspernatur explicabo, fugiat ratione. Cupiditate ipsum iusto ipsa molestias tempora repudiandae quisquam cum tenetur, et dolorum. Natus, velit animi ipsum soluta doloribus facere ipsa maiores mollitia officiis beatae quo a saepe enim, harum perspiciatis distinctio possimus laboriosam culpa alias odio? Et eius odit eligendi, aperiam cupiditate veritatis nulla amet repellendus delectus ad sint ea aut perferendis accusantium quaerat quia velit neque dolorem necessitatibus dolor. Repellendus ratione cumque suscipit maiores, totam odio tenetur, earum architecto id fugit quod a temporibus voluptas asperiores neque cupiditate ex error! Error ullam incidunt libero rem ipsa maiores quasi similique nesciunt dolore consequuntur fugit veniam, velit voluptas, iusto accusantium laudantium nam consequatur, numquam aperiam possimus quia minus itaque suscipit enim? Facilis pariatur dolore blanditiis praesentium consectetur ullam minima. Dignissimos vitae laudantium dolores, sed itaque necessitatibus perspiciatis porro minus iure consequuntur et cumque dolor animi eaque eius. Inventore sequi similique eius saepe asperiores hic molestiae omnis excepturi nostrum vitae iste consequuntur, laudantium corporis, harum natus, veritatis veniam ad temporibus reiciendis obcaecati sit? Possimus voluptate modi deleniti corporis magnam excepturi atque itaque impedit laudantium id nostrum ratione enim expedita quaerat quidem repellat ut nulla, tenetur optio nemo fugit sed animi exercitationem quis. Quas ipsum, ut recusandae beatae doloribus incidunt voluptatem dolor repudiandae iste ipsam dolorum unde maxime soluta eligendi veniam optio praesentium rem reiciendis. Beatae, qui earum quo iure ad necessitatibus? Nesciunt explicabo deserunt pariatur soluta sed ad numquam qui. Nisi incidunt repellendus ab iure officia dolorum voluptates libero? Veniam optio nemo nam, aperiam architecto dolores temporibus excepturi debitis exercitationem error harum amet doloremque velit minima vel. Recusandae, eligendi! Dolores perferendis porro recusandae deleniti quo, voluptate sit atque doloribus voluptates. Eaque, odit voluptas in rerum corrupti eveniet, illum porro et provident obcaecati veniam est ex accusamus ad, rem beatae nostrum eos ea natus quisquam voluptates fuga quia! Id laborum, nisi a quos magnam rerum quas commodi laudantium soluta repellat minima iste fugiat quibusdam ipsam aut quae asperiores atque molestias cupiditate ducimus iure delectus doloribus velit! Aliquam voluptatibus ipsum recusandae hic! Ratione eos ut nam consequuntur veritatis quia harum facilis est minus dolorum cumque hic sit, consectetur, sapiente, nostrum tempore incidunt velit vel sunt eaque! Numquam omnis dicta eos ad, cum nostrum earum cupiditate corporis optio, commodi repellat nobis adipisci? Exercitationem possimus porro aut deserunt cupiditate fuga, sequi quia sunt hic laboriosam doloribus expedita voluptatem ipsa, totam iste? Odit repellendus unde, labore ad ipsam illo omnis eveniet minus iusto blanditiis. Natus accusamus molestias at quo rerum in consectetur explicabo quisquam itaque. Iste, quibusdam non.</div>
+
+            <div class="col-sm">
+              <blockquote class="blockquote">
+                  <p>Start believeing in yourself, now!</p>
+                  <footer class="blockquote-footer">Sabit Kondakci</footer>
+              </blockquote>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-md">
+        <div class="row  row-cols-1 row-cols-sm-3 row-cols-md-6">
+          <div class="col-sm-2 col-md-1">Column</div>
+          <div class="col-sm-2 col-md-1">Column</div>
+          <div class="col-sm-8 col-md-1">Column</div>
+          <div class="col-sm-2 col-md-3 ">Column</div>
+          <div class="col-sm-2 col-md-3">Column</div>
+          <div class="col-sm-8 col-md-3">Column</div>
+          <div class="col-sm-6 col-md-3">Column</div>
+          <div class="col-sm-6 col-md-3">Column</div>
+        </div>
+      </div>
+
+      
+      <footer id="footer" class="navbar navbar-light bg-primary" style="height: 50px;"></footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      
+</body> 
+</html>
