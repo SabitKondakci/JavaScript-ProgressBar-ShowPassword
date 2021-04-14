@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./btstrap.js"></script>
+    <link rel="stylesheet" href="./strap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strap</title>
+</head>
+<body>
+
+    <!-- <div class="container-fluid">
+        <dl class="row p-3 ">
+            <dt class="col-sm-3 text-truncate mb-1">Beverages:</dt>
+            <dd class="col-sm-9">
+                <p>Pepsi ,Coke</p>
+                <p>Ayran,Salgam ,Cay</p>
+                <p>Atom Mix,Fruit Juice</p>
+            </dd>
+            
+      
+            <dt class="col-sm-3 text-truncate mb-1">Foods(Fresh recipies)</dt>
+            <dd class="col-sm-9">
+                <p>Lahmacun, hot and crispy</p>
+                <p>Meatballs , fresh lamb meat , all red from the greenest pastures
+            </dd>
+        
+        </dl>
+
+        <pre class="overflow-scroll bg-gradient bg-dark text-warning p-2 fs-5" style="max-height: 300px;">
+            JavaScript Code:
+            <code class="color ">
+                for(let i = 0; i &lt; 100;i++)
+                {
+                    console.log('object :>> ', i);
+                }
+
+                function test(){
+                    var letter = document.getElementById("#dol");
+                    letter.style.font-size = "2rem";
+                }
+
+                window.onload= function(){
+                    document.initializeWebSockets();
+                    document.run();
+                }
+            </code> 
+        </pre>
+
+    </div> -->
+  
+
+    <!-- <div class="container-md">
+        <h4>Table</h4>
+       <div class="table-responsive-md">
+        <table class="table table-light table-striped border-primary table-hover">
+            <caption>Visual Spot of Table</caption>
+            <thead class="table bg-gradient bg-primary text-light text-nowrap">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">PostCode</th>
+                    <th scope="col">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Anil</td>
+                    <td>Omer</td>
+                    <td>omeranil@gmail.com</td>
+                    <td class="address">omerparlak bulvari, a334 sokak , enval apt. kat:3 a:block edirne</td>
+                    <td>12233</td>
+                    <td>Turkey</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Kenan</td>
+                    <td>Habesi</td>
+                    <td>habeskenan@gmail.com</td>
+                    <td class="address">omerparlak bulvari, a334 sokak , enval apt. kat:3 a:block edirne</td>
+                    <td>14433</td>
+                    <td>Turkey</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Feraye</td>
+                    <td>Senove</td>
+                    <td>senove@gmail.com</td>
+                    <td class="address">omerparlak bulvari, a334 sokak , enval apt. kat:3 a:block edirne</td>
+                    <td>43222</td>
+                    <td>Turkey</td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </div> -->
+
+    <header id="main-header">
+        <h1>CSS Variables, Custom Properties</h1>
+    </header>
+
+    <div class="my-container">
+        <div class="grid">
+            <div class="box">
+                <h2>Hey!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad magnam error unde iure ipsam cumque eum doloribus fugiat ratione commodi? Ipsam architecto atque culpa sit commodi tenetur optio quas ut ipsa veniam rem corporis dignissimos nulla dolores numquam, cum non ex officia eaque nisi ab et earum. Ipsum, magnam enim.</p>
+            </div>
+            <div class="box">
+               <h2>No way!</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos molestias reiciendis repellendus quos tempore beatae ab eum porro. Nisi, consequatur beatae reprehenderit deleniti accusantium nihil. Voluptatibus delectus voluptatem deserunt illum neque voluptas modi omnis amet beatae quo placeat reprehenderit aut quia maiores consectetur aperiam voluptates, reiciendis similique. Eum, non!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const box = document.querySelector(".box");
+        const boxStyles = getComputedStyle(box);
+        const boxMainColor = boxStyles.getPropertyValue("--box-main-color");
+        
+
+        const header = document.querySelector("#main-header");
+        header.style.setProperty("--header-bg-color",boxMainColor)
+    </script>
+</body> 
+</html>
