@@ -15,8 +15,8 @@
 </head>
 <body>
     <div class="container-fluid text-center mt-5">
-        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-            <a title="click for more detailed info" class="alert-link link-danger text-decoration-none" href="#">Viewer discreation is advised</a>
+        <div id="btn-alert" class="alert alert-primary alert-dismissible fade show" role="alert">
+            <a id="vw-disc" title="click for more detailed info" class="alert-link link-danger text-decoration-none" href="#">Viewer discreation is advised</a>
             <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert"></button>
         </div>
         <picture>
@@ -31,7 +31,17 @@
         </div>
     </div>
 
-    
+    <script>
+        jQuery(function(){
+            $("#btn-alert").on("close.bs.alert",function(){
+                alert("if you're a minor you'll be sued for doing this!");
+            })
+
+            $("#vw-disc").on("click",function(){
+                window.location.href = "\ vw_disc_page.html";
+            })
+        })
+    </script>
 
 </body> 
 </html>
