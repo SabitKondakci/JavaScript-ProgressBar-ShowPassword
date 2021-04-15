@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="./btstrap.js"></script>
     <link rel="stylesheet" href="./strap.css">
 
@@ -14,7 +13,101 @@
     <title>Strap</title>
 </head>
 <body>
-    <div class="container-fluid text-center mt-5">
+
+    <!-- <div class="container-fluid">
+        <dl class="row p-3 ">
+            <dt class="col-sm-3 text-truncate mb-1">Beverages:</dt>
+            <dd class="col-sm-9">
+                <p>Pepsi ,Coke</p>
+                <p>Ayran,Salgam ,Cay</p>
+                <p>Atom Mix,Fruit Juice</p>
+            </dd>
+            
+      
+            <dt class="col-sm-3 text-truncate mb-1">Foods(Fresh recipies)</dt>
+            <dd class="col-sm-9">
+                <p>Lahmacun, hot and crispy</p>
+                <p>Meatballs , fresh lamb meat , all red from the greenest pastures
+            </dd>
+        
+        </dl>
+
+        <pre class="overflow-scroll bg-gradient bg-dark text-warning p-2 fs-5" style="max-height: 300px;">
+            JavaScript Code:
+            <code class="color ">
+                for(let i = 0; i &lt; 100;i++)
+                {
+                    console.log('object :>> ', i);
+                }
+
+                function test(){
+                    var letter = document.getElementById("#dol");
+                    letter.style.font-size = "2rem";
+                }
+
+                window.onload= function(){
+                    document.initializeWebSockets();
+                    document.run();
+                }
+            </code> 
+        </pre>
+
+    </div> -->
+  
+
+    <!-- <div class="container-md">
+        <h4>Table</h4>
+       <div class="table-responsive-md">
+        <table class="table table-light table-striped border-primary table-hover">
+            <caption>Visual Spot of Table</caption>
+            <thead class="table bg-gradient bg-primary text-light text-nowrap">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">PostCode</th>
+                    <th scope="col">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Anil</td>
+                    <td>Omer</td>
+                    <td>omeranil@gmail.com</td>
+                    <td class="address">omerparlak bulvari, a334 sokak , enval apt. kat:3 a:block edirne</td>
+                    <td>12233</td>
+                    <td>Turkey</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Kenan</td>
+                    <td>Habesi</td>
+                    <td>habeskenan@gmail.com</td>
+                    <td class="address">omerparlak bulvari, a334 sokak , enval apt. kat:3 a:block edirne</td>
+                    <td>14433</td>
+                    <td>Turkey</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Feraye</td>
+                    <td>Senove</td>
+                    <td>senove@gmail.com</td>
+                    <td class="address">omerparlak bulvari, a334 sokak , enval apt. kat:3 a:block edirne</td>
+                    <td>43222</td>
+                    <td>Turkey</td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </div> -->
+
+
+    <div class="container-lg text-center mt-5">
         <div id="btn-alert" class="alert alert-primary alert-dismissible fade show" role="alert">
             <a id="vw-disc" title="click for more detailed info" class="alert-link link-danger text-decoration-none" href="#">Viewer discreation is advised</a>
             <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert"></button>
@@ -26,9 +119,71 @@
 
         <div class="text-start p-4 text-white bg-gradient bg-primary  rounded-2 my-3">
             <h3 class="display-2 text-center">Hello People</h3>
-            <hr class="text-primary">
+            <hr class="text-dark me-5">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nisi eligendi deleniti voluptas nobis animi maxime commodi? Cumque ad, fuga dolore perspiciatis, alias rem dignissimos laboriosam dolorem iusto veniam enim molestias qui quod modi earum aliquid recusandae possimus libero blanditiis reiciendis? Veritatis voluptas repellendus neque eum, dicta quibusdam cum pariatur labore cupiditate minima totam, ratione culpa soluta libero hic enim aspernatur voluptatum accusantium corporis consequuntur? Quam quia recusandae harum corrupti commodi cumque iste quaerat placeat! Exercitationem minima, quas commodi eaque, doloribus laborum adipisci corporis ipsam provident quisquam alias veritatis voluptate, accusamus consequatur. Quas rerum doloremque error esse, officiis sit ratione!</p>
         </div>
+
+        <div class="d-block btn-toolbar my-2 mx-auto" role="toolbar">
+            <div class="btn-group me-2" role="group">
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn btn-primary">1</button>
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn btn-primary">2</button>
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn btn-primary">3</button>
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn btn-primary">4</button>
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn btn-primary">... </button>
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn bg-gradient btn-success">Next</button>
+                <button type="button" role="button" class="border-1 shadow-none border-dark px-3 btn bg-gradient btn-dark">Last</button>
+                <button type="button" role="button"  class="border-1 shadow-none border-dark px-3 btn bg-gradient btn-danger ms-1">Random</button>
+            </div>
+        </div>
+
+        <div class="dropdown dropup">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Action List
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+         
+        <div class="btn-group m-3" role="group">
+
+          <!-- Example split danger button -->
+          <div class="btn-group dropend">
+            <button type="button" class="btn btn-dark">Action</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="relative">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+
+            <button type="button" class="mx-1 btn btn-outline-primary border-2 fw-bold">GROUP</button>
+            <button type="button" class="mx-1 btn btn-outline-success border-2 fw-bold">GROUP</button>
+           <div class="btn-group">
+                <button type="button" class="mx-1 btn btn-outline-danger border-2 fw-bold dropdown-toggle" aria-label="dropdown toggle" data-bs-toggle="dropdown">Links</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="http://www.google.com">Google</a></li>
+                  <li><a class="dropdown-item" href="http://www.facebook.com">Facebook</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="http://www.hepsiburada.com">Hepsiburada</a></li>
+                </ul>
+           </div>
+        </div>
+    </div>
+
+    <div class="d-grid fw-bold gap-2">
+        <button type="button" class="col-sm-4 offset-sm-4 btn bg-gradient btn-outline-primary border-3 fw-bold rounded-pill ">TOP</button>
+        <button type="button" class="col-sm-4 offset-sm-4 btn bg-gradient btn-outline-success border-3 fw-bold rounded-pill" >CENTER</button>
+        <button type="button" class="col-sm-4 offset-sm-4 btn bg-gradient btn-outline-danger border-3 fw-bold rounded-pill " >BOTTOM</button>
     </div>
 
     <script>
@@ -40,8 +195,15 @@
             $("#vw-disc").on("click",function(){
                 window.location.href = "\ vw_disc_page.html";
             })
+            $("button").on("click",function(){
+                if(!$(this).hasClass("active"))
+                    $(this).addClass("active");
+                else        
+                    $(this).removeClass("active")
+                
+            })
         })
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body> 
 </html>
