@@ -31,14 +31,15 @@
     </div>
 
     <script>
-        jQuery(function(){
+       jQuery(function(){
             var n_message = $("button span div#new-message");
             var mes_badge = $("span#mes-badge");
+            var inner_html = n_message.children("span:first").html();
 
-            if(n_message.children("span:first").html() !== "")
-                mes_badge.css("display","inline-block");
+            if( inner_html !== "")
+                mes_badge.show(200);
             else
-                mes_badge.css("display","none");
+                mes_badge.hide();
 
         })
     </script>
