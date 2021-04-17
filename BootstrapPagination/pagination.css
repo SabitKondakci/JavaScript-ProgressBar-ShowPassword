@@ -1,0 +1,79 @@
+:root{
+    --main-bg-color:rgb(253, 236, 204);
+    --text-h2-color: #4242ff;
+    --main-font-family:Verdana, Geneva, Tahoma, sans-serif;
+    --container-width:80%;
+    --header-bg-color:rgb(153, 153, 255);
+    --main-font-size:1rem;
+}
+
+body{
+    padding: 10px;
+    background-color: var(--main-bg-color);
+}
+
+h2{
+    color: var(--text-h2-color);
+    font-family: var(--main-font-family);
+}
+
+.my-container{
+    width: var(--container-width);
+    margin: 10px auto;
+}
+
+header#main-header{
+    background-color: var(--header-bg-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.box{
+    --box-bg-color:#41bebe;
+    --box-main-color:#0077ff;
+    --box-shadow-x-offset:5px;
+    --box-shadow-y-offset:5px;
+    --box-shadow-blur-offset:7px;
+}
+
+.box{
+    background-color: var(--box-bg-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin:0 10px;
+    border:3px solid rgb(60, 151, 255);
+    box-shadow:
+    var(--box-shadow-x-offset)
+    var(--box-shadow-y-offset)
+    var(--box-shadow-blur-offset)
+    var(--box-main-color);
+    font-size: var(--main-font-size,1rem);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    align-items:stretch;
+}
+@media(max-width:500px){
+    :root{
+        --main-font-size: calc(0.8rem + 1vw);
+    }
+    div.progress div[aria-label="info-bar"]{
+        font-size: 0.5rem;
+        height: 10px;
+    }
+
+}
+
+a.subscribe:hover{
+    color: yellow;
+}
+
+button#btn-mail{
+    transition: 10s;
+}
+
+div.progress[aria-label="info-progress"]{
+    border-radius: 0;
+}
