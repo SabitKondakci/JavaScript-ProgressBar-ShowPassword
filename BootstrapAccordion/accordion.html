@@ -12,11 +12,10 @@
     <title>Strap</title>
 </head>
 <body> 
-    <div class="container-lg">
     <div class="accordion mt-3" id="localForecast">
         <div class="accordion-item">
             <h2 class="accordion-header" id="weather-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#weather">Weather <span class="text-muted ms-5">Rize/Merkez Muftu Mahallesi</span></button>
+                <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#weather">Weather <span class="text-muted ms-5">Rize/Merkez Muftu Mahallesi</span></button>
             </h2>
             <div id="weather" class="accordion-collapse collapse show" aria-labelledby="weather-header" data-bs-parent="#localForecast">
                 <div class="accordion-body">
@@ -27,7 +26,7 @@
 
         <div class="accordion-item">
             <h2 class="accordion-header" id="detail-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detail">Details</button>
+                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#detail">Details</button>
             </h2>
             <div id="detail" class="accordion-collapse collapse" aria-labelledby="detail-header" data-bs-parent="#localForecast">
                 <div class="accordion-body">
@@ -36,9 +35,9 @@
             </div>
         </div>
 
-        <div class="accordion-item">
+        <div class="accordion-item border-3 border-danger">
             <h2 class="accordion-header" id="warning-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#warning">Warning</button>
+                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#warning">Warning</button>
             </h2>
             <div id="warning" class="accordion-collapse collapse" aria-labelledby="warning-header" data-bs-parent="#localForecast">
                 <div class="accordion-body alert-warning">
