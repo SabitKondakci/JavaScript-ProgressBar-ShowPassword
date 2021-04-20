@@ -12,7 +12,7 @@
     <title>Strap</title>
 </head>
 <body> 
-    <div class="accordion mt-3" id="localForecast">
+      <div class="accordion mt-3" id="localForecast">
         <div class="accordion-item">
             <h2 class="accordion-header" id="weather-header">
                 <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#weather">Weather <span class="text-muted ms-5">Rize/Merkez Muftu Mahallesi</span></button>
@@ -37,7 +37,8 @@
 
         <div class="accordion-item border-3 border-danger">
             <h2 class="accordion-header" id="warning-header">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#warning">Warning</button>
+                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#warning">Warning<span class="badge bg-danger ms-4 rounded-2 ">0</span></button>
+                
             </h2>
             <div id="warning" class="accordion-collapse collapse" aria-labelledby="warning-header" data-bs-parent="#localForecast">
                 <div class="accordion-body alert-warning">
@@ -46,7 +47,6 @@
             </div>
         </div>
     </div>
-   
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body> 
