@@ -24,15 +24,18 @@
                         <div class="input-group-text">
                             <span><i class="fas fa-at"></i></span>
                         </div>
-                        <input type="text" name="text" id="email" class="form-control shadow-none" aria-describedby="email" placeholder="E-Mail">
+                        <input type="email" name="text" id="email" class="form-control shadow-none" aria-describedby="email" placeholder="E-Mail">
                     </div>
                     <div class="input-group mt-2" style="width: 18rem;">
                         <div class="input-group-text">
                             <span><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="text" name="text" id="password" class="form-control shadow-none" aria-describedby="password" placeholder="Password">
+                        <input type="password" name="text" id="password" class="form-control shadow-none" aria-describedby="password" placeholder="Password">
+                        <div class="input-group-text bg-white text-muted">
+                            <span><i style="width: 20px;" id="password_sh" class="fas fa-eye"></i></span>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-outline-primary mt-2 shadow-none">Login</button>
+                    <button type="submit" class="btn btn-outline-primary mt-2 fw-bold shadow-none">Login</button>
                 </form>
             </div>
             <div class="card-footer text-center">
@@ -40,6 +43,27 @@
             </div>
            </div>
     </div>
+    <script>
+        jQuery(function(){
+            var password_input = $("input#password");
+            var password_show_hide = $("i#password_sh");
+            var check = true;
+
+            password_show_hide.on("click",function(){
+                if(check)
+                {
+                    password_input.attr("type","text");
+                    $(this).attr("class","fas fa-eye-slash");
+                }
+                else
+                {
+                    password_input.attr("type","password");
+                    $(this).attr("class","fas fa-eye");
+                }
+                check = !check;
+            })
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body> 
 </html>
