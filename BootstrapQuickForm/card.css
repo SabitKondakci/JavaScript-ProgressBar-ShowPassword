@@ -1,0 +1,76 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.card{
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+  .card {
+    margin: 50px auto; 
+}
+
+li a:hover{
+    color:orange
+}
+li a{
+    color:rgb(107, 103, 103);
+}
+.card-img{
+    border-radius: 0;
+}
+
+
+.nav-link{
+  font-size: large;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width:765px)
+{
+  .search-form-display{
+    visibility: collapse;
+  }
+  .dropdown-menu{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+ 
+}
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family:monospace !important;
+  
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family:monospace !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family:monospace !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family:monospace !important;
+}
