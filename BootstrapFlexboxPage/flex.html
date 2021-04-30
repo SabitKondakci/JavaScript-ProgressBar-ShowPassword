@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <style>
+
+        @media(max-width:560px)
+        {
+            iframe{
+                width: 330px;
+                height: 190px;
+            }
+        }
+        a.link-light:hover,:focus{
+            color: yellow;
+        }
+
+        @media(min-width:576px)
+        {
+            .flex-text{
+                width: 120px;
+            }
+        }
+
+        .select-content-map:hover{
+            color: #00aeff;
+        }
+    </style>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strap</title>
+</head>
+<body>
+    
+    <div class="container-md">
+        <div class="d-flex mt-3">
+            <div class="flex-fill p-2 alert-danger d-flex justify-content-center align-items-center">
+                <div class="title-text text-nowrap">
+                    Quick Info <i class="bi bi-info-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-sm-flex mt-1">
+            <div class="p-2 alert-primary border border-primary d-flex justify-content-center align-items-center">
+                <div class="flex-text text-nowrap user-select-none">
+                    Texture
+                </div>
+            </div>
+            <div class="flex-fill p-2 alert-secondary border border-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+        
+        <div class="d-sm-flex mt-1">
+            <div class="p-2 alert-primary border border-primary d-flex justify-content-center align-items-center">
+                <div class="flex-text text-nowrap user-select-none">
+                    Solid Design
+                </div>
+            </div>
+            <div class="flex-fill p-2 alert-secondary border border-primary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sapiente adipisci mollitia a commodi fuga explicabo labore, necessitatibus quae perferendis sunt aut asperiores voluptatem exercitationem iusto officia, iste ipsa repudiandae beatae nesciunt repellat. Sequi possimus corrupti suscipit reprehenderit odio, quos eius ullam cupiditate earum, facere debitis quidem ex tempore illum.
+            </div>
+        </div>
+
+        <div class="d-sm-flex my-1">
+            <div class="p-2 alert-primary border border-primary d-flex justify-content-center align-items-center">
+                <div class="flex-text text-nowrap user-select-none">
+                    Mapping
+                </div>
+            </div>
+            <div id="mapping-text" class="flex-fill p-2 alert-secondary border border-primary">
+                <button type="button" id="select-button-map" title="select content" onclick="selectText('mapping-text')" class="select-content-map float-end bg-transparent border-0 p-0"><i id="map-copy-icon" class="bi bi-clipboard"></i></button>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, facere optio sint neque cumque at delectus non doloremque soluta, magnam labore natus! Beatae quo molestiae voluptatem saepe pariatur nemo itaque earum debitis unde amet voluptas est suscipit distinctio, laborum animi tempore magni quidem esse quos et. Quam earum, modi rerum sed unde enim excepturi error quidem nobis sunt laborum a minima, non dolor? Impedit quam necessitatibus sit ratione voluptas molestias, molestiae debitis, mollitia dolor veniam minima commodi iure. Doloribus sequi repudiandae exercitationem, quod placeat cumque similique fugit! Possimus ullam veniam unde id officia, recusandae reiciendis ea dicta at asperiores officiis est delectus eligendi nemo eaque et deserunt quibusdam esse voluptate quod accusamus libero error voluptatum. Nesciunt, voluptatem? Ipsam officiis nostrum molestias aut itaque? A modi magni impedit aliquid officiis. Illo quia molestias sit animi eius blanditiis molestiae amet natus ipsum itaque porro tempora iste at libero non dolor dolore odit aspernatur quibusdam alias, delectus incidunt! Consectetur voluptate minus reprehenderit dolor iure ad corrupti possimus perspiciatis, quibusdam magnam quo praesentium laboriosam recusandae labore tempore nisi in dolorem distinctio doloribus dignissimos officiis? Vitae, placeat numquam assumenda laudantium nam excepturi incidunt quos nobis nemo labore expedita, consequatur minus voluptatibus, perferendis saepe officiis provident?
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center border border-primary mb-1">
+            <div class="flex-shrink-0 ">
+              <div class="d-flex justify-content-center align-items-center overflow-hidden" style="width:100px;height:100px">
+                <img class="img-fluid" width="140px" src="./images/stock-photo-1014183202.jpg" alt="img">
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3 user-select-all">
+                <div class="position-relative m-4">
+                    <div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+                    <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+                    <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script> 
+
+    function selectText(containerid) {
+        window.getSelection().selectAllChildren(
+            document.getElementById(containerid)
+        );
+    }
+
+    var select_button_map = document.getElementById("select-button-map");
+    var map_icon= document.getElementById("map-copy-icon");
+
+    select_button_map.onfocus = function(){
+        map_icon.setAttribute("class","bi bi-clipboard-check");
+        map_icon.style.color="#00aeff";
+    }
+
+    select_button_map.onblur = function(){
+        map_icon.setAttribute("class","bi bi-clipboard");
+        map_icon.style.color = "black";
+    }
+
+    </script>
+</body> 
+</html>
