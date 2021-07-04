@@ -5,7 +5,15 @@
 
 ---
 #### VSCode JavaScript Debug Terminal
-```npm
-   //To start debugging
+```PoweShell
+   // To start debugging
    node index.js
+```
+#### Chrome Console
+```Chrome
+   let websocket = new WebSocket("https://localhost:8080"); \\ to open a new socket on local machine
+   websocket.onmessage = message => console.log(`${message.data}`); // to read the message on chrome console
+   
+   websocket.Send("Hello To Other Side") // sending messages to the local machine
+   websocket.Close(); // to close the connection of local machine
 ```
